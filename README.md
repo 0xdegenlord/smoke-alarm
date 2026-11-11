@@ -6,6 +6,25 @@ On NEAR, a token is an account that holds code. Whoever holds a full-access key 
 
 Built for the NEAR HACKATHON (November 2026).
 
+## Try it in Telegram (no setup)
+
+Open [@near_smoke_alarm_bot](https://t.me/near_smoke_alarm_bot) and send:
+
+```
+/watch smoke-demo-degen.testnet
+```
+
+The bot replies right away with the token's status (who holds a master key, and its code fingerprint) and starts watching it for you. `smoke-demo-degen.testnet` is our demo token, whose code we swap on purpose, so you see a real alert. Use any NEAR token instead, for example `/watch blackdragon.tkn.near`.
+
+| Command | What it does |
+|---|---|
+| `/watch <token>` | Alerts you when the token's code or master keys change |
+| `/check <token>` | One-time check, no alerts |
+| `/list` | The tokens you watch |
+| `/stop <token>` | Stops alerts for a token |
+
+Each person gets alerts only for the tokens they watch. The bot runs on Cloudflare Workers (free plan), checks watched tokens every minute, and keeps subscriptions in private Workers KV storage, so nobody's chat ID is public. The code is one file, [`bot/worker.js`](bot/worker.js), using the same rules as the scanner. See [Running the bot yourself](#running-the-bot-yourself).
+
 ## Quick start (no keys, no wallet, no account)
 
 Needs Node.js 22 or newer and an internet connection. There are no dependencies to install.
@@ -100,6 +119,17 @@ Without this, alerts print in the terminal.
 
 The workflow commits `data/`, `data-testnet/` and `docs/` back to the repository only when a new event is recorded, so the history shows every change that was ever seen.
 
+## Running the bot yourself
+
+1. In the Cloudflare dashboard, create a KV namespace.
+2. Create a Worker, paste in `bot/worker.js`, and deploy.
+3. In the Worker's settings, bind the KV namespace as `DB`, add a Cron Trigger that runs every minute, and add a secret `BOT_TOKEN` with your bot token from @BotFather.
+4. Open `https://<your-worker>.workers.dev/setup` once. You see `Connected. Open https://t.me/<your bot> and send /start.`
+
+The free plan allows 50 outgoing requests per run, so each run checks up to 15 tokens. With more tokens, the bot rotates through them, one slice per minute. Holder concentration is not checked by the bot; the GitHub scanner does that.
+
+Once a bot is connected this way, Telegram sends its messages to the Worker, so `npm run telegram:chat-id` no longer sees them. Find your chat ID before step 4, or use a separate bot for the GitHub scanner.
+
 ## Commands
 
 | Command | What it does |
@@ -159,6 +189,7 @@ src/notify.js            Telegram alerts, or terminal output if not configured
 src/page.js              Builds the status page
 src/telegram-chat-id.js  Finds your Telegram chat ID
 src/env.js               Loads .env
+bot/worker.js            The Telegram bot, on Cloudflare Workers
 demo/                    Demo token source (.wat), compiled (.wasm), demo scripts, evidence
 test/                    Tests: a simulated NEAR network, plus replays of real recorded responses
 test/fixtures/           Real NEAR responses recorded on 9 November 2026
@@ -177,10 +208,10 @@ Account history: https://testnet.nearblocks.io/address/smoke-demo-degen.testnet
 
 ## Disclosures
 
-- All code in this repository was written on 8 and 9 November 2026, after the hackathon's 19 October 2026 start. No pre-existing code was used.
+- All code in this repository was written between 8 and 11 November 2026, after the hackathon's 19 October 2026 start. No pre-existing code was used.
 - Written with AI assistance (Claude), as permitted by the hackathon rules.
 - No runtime dependencies. Only Node.js built-ins are used.
-- Outside tools: `near-cli-rs` 0.31.1 for the testnet demo only; `wabt` 1.0.36 to compile `demo/*.wat` into `demo/*.wasm` (not needed to run anything); FastNEAR RPC and API for chain data; the Telegram Bot API for alerts; GitHub Actions for scheduling.
+- Outside tools: `near-cli-rs` 0.31.1 for the testnet demo only; `wabt` 1.0.36 to compile `demo/*.wat` into `demo/*.wasm` (not needed to run anything); FastNEAR RPC and API for chain data; the Telegram Bot API for alerts; GitHub Actions for scheduling; Cloudflare Workers and Workers KV for the Telegram bot.
 
 ## License
 
