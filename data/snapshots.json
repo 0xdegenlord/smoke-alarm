@@ -1,31 +1,31 @@
 {
   "wrap.near": {
     "token": "wrap.near",
-    "takenAt": "2026-11-11T09:49:01.602Z",
+    "takenAt": "2026-11-11T10:24:36.867Z",
     "exists": true,
     "codeHash": "DL2f5xmZ44cQRP6vBMt94rvseH5d5KKnAGis2WkTAsh1",
     "hasContract": true,
     "fullAccessKeys": [],
     "functionCallKeys": 0,
     "symbol": "wNEAR",
-    "totalSupply": "36701960796969064900411499320821",
+    "totalSupply": "36744694246606948790151865792858",
     "top10Share": 98.5
   },
   "token.sweat": {
     "token": "token.sweat",
-    "takenAt": "2026-11-11T09:49:02.870Z",
+    "takenAt": "2026-11-11T10:24:38.175Z",
     "exists": true,
     "codeHash": "9EUtV11wgCZ4N16xa24ETnn8E78GjeSit1r7gMyQZ6Zi",
     "hasContract": true,
     "fullAccessKeys": [],
     "functionCallKeys": 0,
     "symbol": "SWEAT",
-    "totalSupply": "19664360392935600891345180022",
+    "totalSupply": "19664372539877020598264903393",
     "top10Share": 79.25
   },
   "usdt.tether-token.near": {
     "token": "usdt.tether-token.near",
-    "takenAt": "2026-11-11T09:49:03.823Z",
+    "takenAt": "2026-11-11T10:24:38.972Z",
     "exists": true,
     "codeHash": "51tHbmQkA8qAi8c6MoUor5mCx6CnL6tZyC2sqQifKPZC",
     "hasContract": true,
@@ -37,7 +37,7 @@
   },
   "token.v2.ref-finance.near": {
     "token": "token.v2.ref-finance.near",
-    "takenAt": "2026-11-11T09:49:04.770Z",
+    "takenAt": "2026-11-11T10:24:39.772Z",
     "exists": true,
     "codeHash": "HagtKcVnSk6eJrg9e4X4Rpvw4ACCrpJjkrdWavLNtggZ",
     "hasContract": true,
@@ -49,7 +49,7 @@
   },
   "token.burrow.near": {
     "token": "token.burrow.near",
-    "takenAt": "2026-11-11T09:49:05.718Z",
+    "takenAt": "2026-11-11T10:24:40.570Z",
     "exists": true,
     "codeHash": "2dLsFG6E2feEcpk9HJxMQH6PMNqC5DvgCUkVDtP1XmZC",
     "hasContract": true,
@@ -61,7 +61,7 @@
   },
   "aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near": {
     "token": "aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near",
-    "takenAt": "2026-11-11T09:49:06.677Z",
+    "takenAt": "2026-11-11T10:24:41.412Z",
     "exists": true,
     "codeHash": "C5YXdd31N6a2pCqAtY3dBarMuBaQsee4UER1AuGeryeo",
     "hasContract": true,
@@ -73,7 +73,7 @@
   },
   "dac17f958d2ee523a2206206994597c13d831ec7.factory.bridge.near": {
     "token": "dac17f958d2ee523a2206206994597c13d831ec7.factory.bridge.near",
-    "takenAt": "2026-11-11T09:49:07.444Z",
+    "takenAt": "2026-11-11T10:24:42.213Z",
     "exists": true,
     "codeHash": "C5YXdd31N6a2pCqAtY3dBarMuBaQsee4UER1AuGeryeo",
     "hasContract": true,
@@ -85,19 +85,19 @@
   },
   "a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.factory.bridge.near": {
     "token": "a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.factory.bridge.near",
-    "takenAt": "2026-11-11T09:49:08.162Z",
+    "takenAt": "2026-11-11T10:24:43.062Z",
     "exists": true,
     "codeHash": "C5YXdd31N6a2pCqAtY3dBarMuBaQsee4UER1AuGeryeo",
     "hasContract": true,
     "fullAccessKeys": [],
     "functionCallKeys": 0,
     "symbol": "USDC.e",
-    "totalSupply": "14557101725652",
+    "totalSupply": "14557500731450",
     "top10Share": 92.47
   },
   "6b175474e89094c44da98b954eedeac495271d0f.factory.bridge.near": {
     "token": "6b175474e89094c44da98b954eedeac495271d0f.factory.bridge.near",
-    "takenAt": "2026-11-11T09:49:08.884Z",
+    "takenAt": "2026-11-11T10:24:43.837Z",
     "exists": true,
     "codeHash": "C5YXdd31N6a2pCqAtY3dBarMuBaQsee4UER1AuGeryeo",
     "hasContract": true,
@@ -109,7 +109,7 @@
   },
   "blackdragon.tkn.near": {
     "token": "blackdragon.tkn.near",
-    "takenAt": "2026-11-11T09:49:09.577Z",
+    "takenAt": "2026-11-11T10:24:44.620Z",
     "exists": true,
     "codeHash": "4AVV1KUVgi17XoXkqxUPzyMhERXu15mGawriPQvWmBKD",
     "hasContract": true,
@@ -121,7 +121,7 @@
   },
   "token.0xshitzu.near": {
     "token": "token.0xshitzu.near",
-    "takenAt": "2026-11-11T09:49:10.341Z",
+    "takenAt": "2026-11-11T10:24:45.441Z",
     "exists": true,
     "codeHash": "4yrp1LPH6q5vUkvAHMw72Bsc8WPk2isqev3dQDYsbZQJ",
     "hasContract": true,
@@ -133,7 +133,7 @@
   },
   "token.lonkingnearbackto2024.near": {
     "token": "token.lonkingnearbackto2024.near",
-    "takenAt": "2026-11-11T09:49:11.033Z",
+    "takenAt": "2026-11-11T10:24:46.218Z",
     "exists": true,
     "codeHash": "GYNhTvepHDdviQQNG1MoWTCi6nBhLuQknMDkZ7P8WwJj",
     "hasContract": true,

@@ -1,9 +1,9 @@
 {
   "smoke-demo-degen.testnet": {
     "token": "smoke-demo-degen.testnet",
-    "takenAt": "2026-11-11T09:49:11.552Z",
+    "takenAt": "2026-11-11T10:24:46.736Z",
     "exists": true,
-    "codeHash": "44AuFhjub3yegiuiVJq972jDXeEnpoN71KVKFEerd69w",
+    "codeHash": "GNZrMCbwtSyufBp6BB6PLeH3qirQEMBajZFpCnpcHVQu",
     "hasContract": true,
     "fullAccessKeys": [
       "ed25519:3RFPXJiEo9o1sD1r8e1a15QtPdexRMSrWfEL49t1gZt2"
@@ -15,7 +15,7 @@
   },
   "ember-daily-degen.testnet": {
     "token": "ember-daily-degen.testnet",
-    "takenAt": "2026-11-11T09:49:12.933Z",
+    "takenAt": "2026-11-11T10:24:47.950Z",
     "exists": true,
     "codeHash": "2nxrMXFZdBpruBuzwGZuWPEzUAwWUzkzNfuXD3h4oEGZ",
     "hasContract": true,
@@ -27,7 +27,7 @@
   },
   "ember-fast-degen.testnet": {
     "token": "ember-fast-degen.testnet",
-    "takenAt": "2026-11-11T09:49:14.153Z",
+    "takenAt": "2026-11-11T10:24:49.016Z",
     "exists": true,
     "codeHash": "2nxrMXFZdBpruBuzwGZuWPEzUAwWUzkzNfuXD3h4oEGZ",
     "hasContract": true,
