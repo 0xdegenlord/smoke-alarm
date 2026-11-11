@@ -1,0 +1,51 @@
+# Runs the scanner on a schedule in GitHub's cloud, so nothing has to stay on at home.
+# Add two repository secrets: TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID
+# (Settings > Secrets and variables > Actions > New repository secret).
+name: scan
+
+on:
+  schedule:
+    - cron: "*/5 * * * *" # the fastest GitHub allows; busy times can start runs late
+  workflow_dispatch: # lets you press "Run workflow" by hand
+
+permissions:
+  contents: write # to save new snapshots back into the repo
+
+concurrency:
+  group: scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test
+      - run: npm run scan
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      # Testnet: the demo token (its master key is kept on purpose, so its code can be swapped
+      # to show the alarm firing) and two tokens with no keys at all, which should never change.
+      - run: npm run scan -- --network testnet smoke-demo-degen.testnet ember-daily-degen.testnet ember-fast-degen.testnet
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - run: npm run page
+      # Save only when something new happened, so the history stays readable.
+      - name: Save snapshots and page if anything changed
+        run: |
+          git add -N data/ data-testnet/ 2>/dev/null || true
+          if git diff --quiet -- data/events.jsonl data-testnet/events.jsonl; then
+            echo "No new events. Nothing to save."
+            exit 0
+          fi
+          git config user.name "smoke-alarm-bot"
+          git config user.email "smoke-alarm-bot@users.noreply.github.com"
+          git add data/ data-testnet/ docs/
+          git commit -m "scan: new events recorded"
+          git push
