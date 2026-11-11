@@ -1,0 +1,12 @@
+{"severity":"info","type":"BASELINE","token":"wrap.near","at":"2026-11-08T19:43:04.155Z","message":"wNEAR (wrap.near): first snapshot recorded."}
+{"severity":"info","type":"BASELINE","token":"token.sweat","at":"2026-11-08T19:43:05.488Z","message":"SWEAT (token.sweat): first snapshot recorded."}
+{"severity":"info","type":"BASELINE","token":"usdt.tether-token.near","at":"2026-11-08T19:43:06.392Z","message":"USDt (usdt.tether-token.near): first snapshot recorded."}
+{"severity":"info","type":"BASELINE","token":"token.v2.ref-finance.near","at":"2026-11-08T19:43:07.276Z","message":"REF (token.v2.ref-finance.near): first snapshot recorded."}
+{"severity":"info","type":"BASELINE","token":"token.burrow.near","at":"2026-11-08T19:43:08.236Z","message":"BRRR (token.burrow.near): first snapshot recorded."}
+{"severity":"info","type":"BASELINE","token":"aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near","at":"2026-11-08T19:43:09.199Z","message":"AURORA (aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near): first snapshot recorded."}
+{"severity":"info","type":"BASELINE","token":"dac17f958d2ee523a2206206994597c13d831ec7.factory.bridge.near","at":"2026-11-08T19:43:10.116Z","message":"USDT.e (dac17f958d2ee523a2206206994597c13d831ec7.factory.bridge.near): first snapshot recorded."}
+{"severity":"info","type":"BASELINE","token":"a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.factory.bridge.near","at":"2026-11-08T19:43:11.002Z","message":"USDC.e (a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.factory.bridge.near): first snapshot recorded."}
+{"severity":"info","type":"BASELINE","token":"6b175474e89094c44da98b954eedeac495271d0f.factory.bridge.near","at":"2026-11-08T19:43:11.903Z","message":"DAI (6b175474e89094c44da98b954eedeac495271d0f.factory.bridge.near): first snapshot recorded."}
+{"severity":"info","type":"BASELINE","token":"blackdragon.tkn.near","at":"2026-11-08T19:43:12.784Z","message":"BLACKDRAGON (blackdragon.tkn.near): first snapshot recorded."}
+{"severity":"info","type":"BASELINE","token":"token.0xshitzu.near","at":"2026-11-08T19:43:13.697Z","message":"SHITZU (token.0xshitzu.near): first snapshot recorded."}
+{"severity":"info","type":"BASELINE","token":"token.lonkingnearbackto2024.near","at":"2026-11-08T19:43:14.626Z","message":"LONK (token.lonkingnearbackto2024.near): first snapshot recorded."}

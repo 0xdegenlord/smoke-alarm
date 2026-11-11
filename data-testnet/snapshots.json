@@ -1,0 +1,16 @@
+{
+  "smoke-demo-degen.testnet": {
+    "token": "smoke-demo-degen.testnet",
+    "takenAt": "2026-11-08T19:35:34.980Z",
+    "exists": true,
+    "codeHash": "44AuFhjub3yegiuiVJq972jDXeEnpoN71KVKFEerd69w",
+    "hasContract": true,
+    "fullAccessKeys": [
+      "ed25519:3RFPXJiEo9o1sD1r8e1a15QtPdexRMSrWfEL49t1gZt2"
+    ],
+    "functionCallKeys": 0,
+    "symbol": "DEMO",
+    "totalSupply": "1000000",
+    "top10Share": null
+  }
+}

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smoke Alarm</title>
+<style>
+:root{--bg:#fafaf8;--card:#fff;--text:#1f1f1d;--muted:#6b6a65;--border:#e4e2db;
+--green-bg:#e6f4ea;--green:#1e6b3a;--amber-bg:#fdf1dc;--amber:#8a5300;--red-bg:#fbe9e9;--red:#a12b2b;--blue-bg:#e8f0fb;--blue:#1d4f91}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--card:#1d1d1b;--text:#ecebe6;--muted:#a3a29b;--border:#33322e;
+--green-bg:#173723;--green:#8fd6a6;--amber-bg:#3a2a0d;--amber:#f2c26b;--red-bg:#3d1717;--red:#f29b9b;--blue-bg:#16263d;--blue:#9cc1f2}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:960px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:26px;font-weight:600;margin:0}
+.lede{color:var(--muted);margin:4px 0 28px;max-width:640px}
+h2{font-size:19px;font-weight:600;margin:36px 0 12px;padding-top:20px;border-top:1px solid var(--border)}
+h3{font-size:15px;font-weight:600;margin:24px 0 8px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+.label{color:var(--muted);font-size:13px}.value{font-size:22px;font-weight:600}.value.small{font-size:15px;padding-top:6px}
+.table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:10px;background:var(--card)}
+table{width:100%;border-collapse:collapse;min-width:620px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+tr:last-child td{border-bottom:none}
+th{font-size:13px;color:var(--muted);font-weight:500}
+.num{text-align:right}.muted{color:var(--muted);font-size:13px}
+.mono{font-family:ui-monospace,Consolas,monospace;font-size:13px}
+.sym{font-weight:600}.acct{color:var(--muted);font-size:13px;word-break:break-all;text-decoration:none}
+.acct:hover{text-decoration:underline}
+.chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.chip.locked,.chip.good{background:var(--green-bg);color:var(--green)}
+.chip.key-held,.chip.warn{background:var(--amber-bg);color:var(--amber)}
+.chip.missing,.chip.critical{background:var(--red-bg);color:var(--red)}
+.alerts{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.alert{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 14px}
+.alert.critical{border-color:var(--red)}
+.alert-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.alert p{margin:6px 0 0}
+.empty{background:var(--card);border:1px dashed var(--border);border-radius:10px;padding:14px;color:var(--muted);margin:0}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;margin:0}
+dt{font-weight:600}dd{margin:0;color:var(--muted)}
+footer{margin-top:40px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<h1>Smoke Alarm</h1>
+<p class="lede">Watches NEAR tokens and tells you when someone can change, or just changed, the rules behind your balance.</p>
+<section>
+  <h2>Mainnet</h2>
+  <div class="stats">
+    <div class="stat"><div class="label">Tokens watched</div><div class="value">12</div></div>
+    <div class="stat"><div class="label">Locked</div><div class="value">12</div></div>
+    <div class="stat"><div class="label">Master key held</div><div class="value">0</div></div>
+    <div class="stat"><div class="label">Last check</div><div class="value small">2026-11-08 19:43 UTC</div></div>
+  </div>
+  <h3>Recent alerts</h3>
+  <p class="empty">No alerts. Every change so far has been routine.</p>
+  <h3>Tokens</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Token</th><th>Status</th><th>Code fingerprint</th><th class="num">Top 10 hold</th><th>Checked</th></tr></thead>
+    <tbody><tr>
+  <td><div class="sym">wNEAR</div><a class="acct" href="https://nearblocks.io/address/wrap.near">wrap.near</a></td>
+  <td><span class="chip locked" title="No master key exists. Nobody can swap the code on their own.">Locked</span></td>
+  <td class="mono">DL2f5xmZ44</td>
+  <td class="num">98.48%</td>
+  <td class="muted">2026-11-08 19:43 UTC</td>
+</tr>
+<tr>
+  <td><div class="sym">SWEAT</div><a class="acct" href="https://nearblocks.io/address/token.sweat">token.sweat</a></td>
+  <td><span class="chip locked" title="No master key exists. Nobody can swap the code on their own.">Locked</span></td>
+  <td class="mono">9EUtV11wgC</td>
+  <td class="num">79.22%</td>
+  <td class="muted">2026-11-08 19:43 UTC</td>
+</tr>
+<tr>
+  <td><div class="sym">USDt</div><a class="acct" href="https://nearblocks.io/address/usdt.tether-token.near">usdt.tether-token.near</a></td>
+  <td><span class="chip locked" title="No master key exists. Nobody can swap the code on their own.">Locked</span></td>
+  <td class="mono">51tHbmQkA8</td>
+  <td class="num">97.05%</td>
+  <td class="muted">2026-11-08 19:43 UTC</td>
+</tr>
+<tr>
+  <td><div class="sym">REF</div><a class="acct" href="https://nearblocks.io/address/token.v2.ref-finance.near">token.v2.ref-finance.near</a></td>
+  <td><span class="chip locked" title="No master key exists. Nobody can swap the code on their own.">Locked</span></td>
+  <td class="mono">HagtKcVnSk</td>
+  <td class="num">95.32%</td>
+  <td class="muted">2026-11-08 19:43 UTC</td>
+</tr>
+<tr>
+  <td><div class="sym">BRRR</div><a class="acct" href="https://nearblocks.io/address/token.burrow.near">token.burrow.near</a></td>
+  <td><span class="chip locked" title="No master key exists. Nobody can swap the code on their own.">Locked</span></td>
+  <td class="mono">2dLsFG6E2f</td>
+  <td class="num">95.45%</td>
+  <td class="muted">2026-11-08 19:43 UTC</td>
+</tr>
+<tr>
+  <td><div class="sym">AURORA</div><a class="acct" href="https://nearblocks.io/address/aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near">aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near</a></td>
+  <td><span class="chip locked" title="No master key exists. Nobody can swap the code on their own.">Locked</span></td>
+  <td class="mono">C5YXdd31N6</td>
+  <td class="num">98.22%</td>
+  <td class="muted">2026-11-08 19:43 UTC</td>
+</tr>
+<tr>
+  <td><div class="sym">USDT.e</div><a class="acct" href="https://nearblocks.io/address/dac17f958d2ee523a2206206994597c13d831ec7.factory.bridge.near">dac17f958d2ee523a2206206994597c13d831ec7.factory.bridge.near</a></td>
+  <td><span class="chip locked" title="No master key exists. Nobody can swap the code on their own.">Locked</span></td>
+  <td class="mono">C5YXdd31N6</td>
+  <td class="num">87.91%</td>
+  <td class="muted">2026-11-08 19:43 UTC</td>
+</tr>
+<tr>
+  <td><div class="sym">USDC.e</div><a class="acct" href="https://nearblocks.io/address/a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.factory.bridge.near">a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.factory.bridge.near</a></td>
+  <td><span class="chip locked" title="No master key exists. Nobody can swap the code on their own.">Locked</span></td>
+  <td class="mono">C5YXdd31N6</td>
+  <td class="num">92.35%</td>
+  <td class="muted">2026-11-08 19:43 UTC</td>
+</tr>
+<tr>
+  <td><div class="sym">DAI</div><a class="acct" href="https://nearblocks.io/address/6b175474e89094c44da98b954eedeac495271d0f.factory.bridge.near">6b175474e89094c44da98b954eedeac495271d0f.factory.bridge.near</a></td>
+  <td><span class="chip locked" title="No master key exists. Nobody can swap the code on their own.">Locked</span></td>
+  <td class="mono">C5YXdd31N6</td>
+  <td class="num">88.38%</td>
+  <td class="muted">2026-11-08 19:43 UTC</td>
+</tr>
+<tr>
+  <td><div class="sym">BLACKDRAGON</div><a class="acct" href="https://nearblocks.io/address/blackdragon.tkn.near">blackdragon.tkn.near</a></td>
+  <td><span class="chip locked" title="No master key exists. Nobody can swap the code on their own.">Locked</span></td>
+  <td class="mono">4AVV1KUVgi</td>
+  <td class="num">46.56%</td>
+  <td class="muted">2026-11-08 19:43 UTC</td>
+</tr>
+<tr>
+  <td><div class="sym">SHITZU</div><a class="acct" href="https://nearblocks.io/address/token.0xshitzu.near">token.0xshitzu.near</a></td>
+  <td><span class="chip locked" title="No master key exists. Nobody can swap the code on their own.">Locked</span></td>
+  <td class="mono">4yrp1LPH6q</td>
+  <td class="num">54.91%</td>
+  <td class="muted">2026-11-08 19:43 UTC</td>
+</tr>
+<tr>
+  <td><div class="sym">LONK</div><a class="acct" href="https://nearblocks.io/address/token.lonkingnearbackto2024.near">token.lonkingnearbackto2024.near</a></td>
+  <td><span class="chip locked" title="No master key exists. Nobody can swap the code on their own.">Locked</span></td>
+  <td class="mono">GYNhTvepHD</td>
+  <td class="num">81.42%</td>
+  <td class="muted">2026-11-08 19:43 UTC</td>
+</tr></tbody>
+  </table></div>
+</section>
+<section>
+  <h2>Testnet demo</h2>
+  <div class="stats">
+    <div class="stat"><div class="label">Tokens watched</div><div class="value">1</div></div>
+    <div class="stat"><div class="label">Locked</div><div class="value">0</div></div>
+    <div class="stat"><div class="label">Master key held</div><div class="value">1</div></div>
+    <div class="stat"><div class="label">Last check</div><div class="value small">2026-11-08 19:35 UTC</div></div>
+  </div>
+  <h3>Recent alerts</h3>
+  <ul class="alerts"><li class="alert critical">
+  <div class="alert-head"><span class="chip critical">Critical</span><span class="muted">2026-11-08 19:35 UTC</span></div>
+  <p>DEMO (smoke-demo-degen.testnet): the token&#39;s code changed while someone held a master key. One person could have rewritten the rules.</p>
+</li></ul>
+  <h3>Tokens</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Token</th><th>Status</th><th>Code fingerprint</th><th class="num">Top 10 hold</th><th>Checked</th></tr></thead>
+    <tbody><tr>
+  <td><div class="sym">DEMO</div><a class="acct" href="https://testnet.nearblocks.io/address/smoke-demo-degen.testnet">smoke-demo-degen.testnet</a></td>
+  <td><span class="chip key-held" title="Whoever holds this key can replace the token&#39;s code at any time.">1 master key held</span></td>
+  <td class="mono">44AuFhjub3</td>
+  <td class="num">n/a</td>
+  <td class="muted">2026-11-08 19:35 UTC</td>
+</tr></tbody>
+  </table></div>
+</section>
+<h2>How to read this</h2>
+<dl>
+<dt><span class="chip locked">Locked</span></dt><dd>No master key exists, so no single person can swap the token's code.</dd>
+<dt><span class="chip key-held">Master key held</span></dt><dd>Someone holds a key that can replace the token's code at any moment.</dd>
+<dt>Code fingerprint</dt><dd>A short ID of the token's code. If it changes, the rules changed.</dd>
+<dt>Top 10 hold</dt><dd>Share of supply held by the 10 largest accounts. These are often pools, bridges and exchanges, not people, so a high number is normal for big tokens.</dd>
+</dl>
+<footer>Generated 2026-11-08 19:45 UTC. Smoke Alarm detects changes, not intentions: a quiet page is not a safety guarantee.</footer>
+</main>
+</body>
+</html>

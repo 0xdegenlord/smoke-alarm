@@ -1,0 +1,16 @@
+{
+  "name": "smoke-alarm",
+  "version": "0.3.0",
+  "description": "Watches NEAR fungible tokens and alerts when a token's code or master keys change.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "scan": "node src/scan.js",
+    "test": "node --test test/*.test.js",
+    "telegram:chat-id": "node src/telegram-chat-id.js",
+    "page": "node src/page.js"
+  }
+}

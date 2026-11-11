@@ -1,0 +1,35 @@
+{
+  "_about": "Real NEAR RPC and FastNEAR responses recorded on 2026-11-08T20:06:39Z (2026-11-09 Asia/Dhaka) from free.rpc.fastnear.com, test.rpc.fastnear.com and api.fastnear.com. Trimmed to the fields Smoke Alarm reads; call_function results are stored as decoded text and turned back into bytes by the replay test. token.sweat holders trimmed to the top 10 rows; the ft_metadata icon is omitted.",
+  "recordedAt": "2026-11-08T20:06:39.205Z",
+  "rpc": [
+    { "net": "mainnet", "acct": "wrap.near", "type": "view_account", "r": { "code_hash": "DL2f5xmZ44cQRP6vBMt94rvseH5d5KKnAGis2WkTAsh1", "amount": "36606955552177193357218313286136", "h": 223664030 } },
+    { "net": "mainnet", "acct": "wrap.near", "type": "view_access_key_list", "r": { "keys": [], "h": 223664031 } },
+    { "net": "mainnet", "acct": "wrap.near", "type": "call_function", "method": "ft_metadata", "r": { "text": "{\"spec\":\"ft-1.0.0\",\"name\":\"Wrapped NEAR fungible token\",\"symbol\":\"wNEAR\",\"icon\":null,\"reference\":null,\"reference_hash\":null,\"decimals\":24}", "h": 223664031 } },
+    { "net": "mainnet", "acct": "wrap.near", "type": "call_function", "method": "ft_total_supply", "r": { "text": "\"36600193888804560481751931430428\"", "h": 223664032 } },
+    { "net": "mainnet", "acct": "token.sweat", "type": "view_account", "r": { "code_hash": "9EUtV11wgCZ4N16xa24ETnn8E78GjeSit1r7gMyQZ6Zi", "amount": "44308139362373677093969081517", "h": 223664032 } },
+    { "net": "mainnet", "acct": "token.sweat", "type": "view_access_key_list", "r": { "keys": [], "h": 223664033 } },
+    { "net": "mainnet", "acct": "token.sweat", "type": "call_function", "method": "ft_metadata", "r": { "text": "{\"spec\":\"ft-1.0\",\"name\":\"SWEAT\",\"symbol\":\"SWEAT\",\"reference\":null,\"reference_hash\":null,\"decimals\":18}", "h": 223664034 } },
+    { "net": "mainnet", "acct": "token.sweat", "type": "call_function", "method": "ft_total_supply", "r": { "text": "\"19663588205788685347831793761\"", "h": 223664034 } },
+    { "net": "testnet", "acct": "smoke-demo-degen.testnet", "type": "view_account", "r": { "code_hash": "44AuFhjub3yegiuiVJq972jDXeEnpoN71KVKFEerd69w", "amount": "9999757102100897000000000", "h": 276822427 } },
+    { "net": "testnet", "acct": "smoke-demo-degen.testnet", "type": "view_access_key_list", "r": { "keys": [{ "pk": "ed25519:3RFPXJiEo9o1sD1r8e1a15QtPdexRMSrWfEL49t1gZt2", "perm": "FullAccess" }], "h": 276822428 } },
+    { "net": "testnet", "acct": "smoke-demo-degen.testnet", "type": "call_function", "method": "ft_metadata", "r": { "text": "{\"spec\":\"ft-1.0.0\",\"name\":\"Smoke Alarm Demo\",\"symbol\":\"DEMO\",\"decimals\":0}", "h": 276822429 } },
+    { "net": "testnet", "acct": "smoke-demo-degen.testnet", "type": "call_function", "method": "ft_total_supply", "r": { "text": "\"1000000\"", "h": 276822430 } }
+  ],
+  "holders": {
+    "token.sweat": {
+      "token_id": "token.sweat",
+      "accounts": [
+        { "account_id": "hodl-lockup.sweat", "balance": "5585557648613358506734909754" },
+        { "account_id": "sweatcoltd.sweat", "balance": "3721780649330000000000000000" },
+        { "account_id": "contract.portalbridge.near", "balance": "3610869930402625341582573312" },
+        { "account_id": "v2.jars.sweat", "balance": "928221324613991236280843616" },
+        { "account_id": "91872d04f56d644a96b78ea1e0b7c191c8772004669f430e081b3bd860607269", "balance": "472647195346845336233296092" },
+        { "account_id": "ecosystem.sweat", "balance": "396295411886144339609984538" },
+        { "account_id": "0999e037414caa351c3425d893b233add9674a3f65271e2fff66c827d5f1633e", "balance": "262724765026908001300000000" },
+        { "account_id": "jars.sweat", "balance": "230319669932356295518067283" },
+        { "account_id": "7e5a73cc01f1e661dc88b6931530c2060c1fe2a0979a4928c3bf0faf7d993068", "balance": "200000104672606324345741612" },
+        { "account_id": "treasury.sweat", "balance": "170966112419895118163368852" }
+      ]
+    }
+  }
+}
