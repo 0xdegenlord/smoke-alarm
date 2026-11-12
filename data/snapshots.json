@@ -1,31 +1,31 @@
 {
   "wrap.near": {
     "token": "wrap.near",
-    "takenAt": "2026-11-11T10:24:36.867Z",
+    "takenAt": "2026-11-12T12:57:35.662Z",
     "exists": true,
     "codeHash": "DL2f5xmZ44cQRP6vBMt94rvseH5d5KKnAGis2WkTAsh1",
     "hasContract": true,
     "fullAccessKeys": [],
     "functionCallKeys": 0,
     "symbol": "wNEAR",
-    "totalSupply": "36744694246606948790151865792858",
-    "top10Share": 98.5
+    "totalSupply": "36833897641435781931954483482505",
+    "top10Share": 98.54
   },
   "token.sweat": {
     "token": "token.sweat",
-    "takenAt": "2026-11-11T10:24:38.175Z",
+    "takenAt": "2026-11-12T12:57:37.119Z",
     "exists": true,
     "codeHash": "9EUtV11wgCZ4N16xa24ETnn8E78GjeSit1r7gMyQZ6Zi",
     "hasContract": true,
     "fullAccessKeys": [],
     "functionCallKeys": 0,
     "symbol": "SWEAT",
-    "totalSupply": "19664372539877020598264903393",
-    "top10Share": 79.25
+    "totalSupply": "19664736249423938557462158870",
+    "top10Share": 79.16
   },
   "usdt.tether-token.near": {
     "token": "usdt.tether-token.near",
-    "takenAt": "2026-11-11T10:24:38.972Z",
+    "takenAt": "2026-11-12T12:57:38.016Z",
     "exists": true,
     "codeHash": "51tHbmQkA8qAi8c6MoUor5mCx6CnL6tZyC2sqQifKPZC",
     "hasContract": true,
@@ -37,7 +37,7 @@
   },
   "token.v2.ref-finance.near": {
     "token": "token.v2.ref-finance.near",
-    "takenAt": "2026-11-11T10:24:39.772Z",
+    "takenAt": "2026-11-12T12:57:38.843Z",
     "exists": true,
     "codeHash": "HagtKcVnSk6eJrg9e4X4Rpvw4ACCrpJjkrdWavLNtggZ",
     "hasContract": true,
@@ -49,7 +49,7 @@
   },
   "token.burrow.near": {
     "token": "token.burrow.near",
-    "takenAt": "2026-11-11T10:24:40.570Z",
+    "takenAt": "2026-11-12T12:57:39.653Z",
     "exists": true,
     "codeHash": "2dLsFG6E2feEcpk9HJxMQH6PMNqC5DvgCUkVDtP1XmZC",
     "hasContract": true,
@@ -61,43 +61,43 @@
   },
   "aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near": {
     "token": "aaaaaa20d9e0e2461697782ef11675f668207961.factory.bridge.near",
-    "takenAt": "2026-11-11T10:24:41.412Z",
+    "takenAt": "2026-11-12T12:57:40.533Z",
     "exists": true,
     "codeHash": "C5YXdd31N6a2pCqAtY3dBarMuBaQsee4UER1AuGeryeo",
     "hasContract": true,
     "fullAccessKeys": [],
     "functionCallKeys": 0,
     "symbol": "AURORA",
-    "totalSupply": "766664188424484806025839657",
-    "top10Share": 98.2
+    "totalSupply": "766664136023220519059177513",
+    "top10Share": 98.21
   },
   "dac17f958d2ee523a2206206994597c13d831ec7.factory.bridge.near": {
     "token": "dac17f958d2ee523a2206206994597c13d831ec7.factory.bridge.near",
-    "takenAt": "2026-11-11T10:24:42.213Z",
+    "takenAt": "2026-11-12T12:57:41.388Z",
     "exists": true,
     "codeHash": "C5YXdd31N6a2pCqAtY3dBarMuBaQsee4UER1AuGeryeo",
     "hasContract": true,
     "fullAccessKeys": [],
     "functionCallKeys": 0,
     "symbol": "USDT.e",
-    "totalSupply": "3857884964488",
-    "top10Share": 87.4
+    "totalSupply": "3860884964488",
+    "top10Share": 87.41
   },
   "a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.factory.bridge.near": {
     "token": "a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.factory.bridge.near",
-    "takenAt": "2026-11-11T10:24:43.062Z",
+    "takenAt": "2026-11-12T12:57:42.282Z",
     "exists": true,
     "codeHash": "C5YXdd31N6a2pCqAtY3dBarMuBaQsee4UER1AuGeryeo",
     "hasContract": true,
     "fullAccessKeys": [],
     "functionCallKeys": 0,
     "symbol": "USDC.e",
-    "totalSupply": "14557500731450",
-    "top10Share": 92.47
+    "totalSupply": "14562384906558",
+    "top10Share": 92.48
   },
   "6b175474e89094c44da98b954eedeac495271d0f.factory.bridge.near": {
     "token": "6b175474e89094c44da98b954eedeac495271d0f.factory.bridge.near",
-    "takenAt": "2026-11-11T10:24:43.837Z",
+    "takenAt": "2026-11-12T12:57:43.082Z",
     "exists": true,
     "codeHash": "C5YXdd31N6a2pCqAtY3dBarMuBaQsee4UER1AuGeryeo",
     "hasContract": true,
@@ -109,7 +109,7 @@
   },
   "blackdragon.tkn.near": {
     "token": "blackdragon.tkn.near",
-    "takenAt": "2026-11-11T10:24:44.620Z",
+    "takenAt": "2026-11-12T12:57:43.931Z",
     "exists": true,
     "codeHash": "4AVV1KUVgi17XoXkqxUPzyMhERXu15mGawriPQvWmBKD",
     "hasContract": true,
@@ -117,11 +117,11 @@
     "functionCallKeys": 0,
     "symbol": "BLACKDRAGON",
     "totalSupply": "99999456476573061882010170865837993808",
-    "top10Share": 46.63
+    "top10Share": 46.57
   },
   "token.0xshitzu.near": {
     "token": "token.0xshitzu.near",
-    "takenAt": "2026-11-11T10:24:45.441Z",
+    "takenAt": "2026-11-12T12:57:44.772Z",
     "exists": true,
     "codeHash": "4yrp1LPH6q5vUkvAHMw72Bsc8WPk2isqev3dQDYsbZQJ",
     "hasContract": true,
@@ -129,11 +129,11 @@
     "functionCallKeys": 0,
     "symbol": "SHITZU",
     "totalSupply": "306242069000000000000000000",
-    "top10Share": 55.18
+    "top10Share": 54.99
   },
   "token.lonkingnearbackto2024.near": {
     "token": "token.lonkingnearbackto2024.near",
-    "takenAt": "2026-11-11T10:24:46.218Z",
+    "takenAt": "2026-11-12T12:57:45.572Z",
     "exists": true,
     "codeHash": "GYNhTvepHDdviQQNG1MoWTCi6nBhLuQknMDkZ7P8WwJj",
     "hasContract": true,
@@ -141,6 +141,6 @@
     "functionCallKeys": 0,
     "symbol": "LONK",
     "totalSupply": "42068970468134795995",
-    "top10Share": 81.4
+    "top10Share": 81.45
   }
 }

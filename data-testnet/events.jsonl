@@ -3,3 +3,4 @@
 {"severity":"info","type":"BASELINE","token":"ember-daily-degen.testnet","at":"2026-11-11T09:49:12.933Z","message":"EMBER (ember-daily-degen.testnet): first snapshot recorded."}
 {"severity":"info","type":"BASELINE","token":"ember-fast-degen.testnet","at":"2026-11-11T09:49:14.153Z","message":"EMBER (ember-fast-degen.testnet): first snapshot recorded."}
 {"severity":"critical","type":"UNILATERAL_RECOMPILE","token":"smoke-demo-degen.testnet","at":"2026-11-11T10:24:46.736Z","message":"DEMO (smoke-demo-degen.testnet): the token's code changed while someone held a master key. One person could have rewritten the rules."}
+{"severity":"critical","type":"UNILATERAL_RECOMPILE","token":"smoke-demo-degen.testnet","at":"2026-11-12T12:57:46.123Z","message":"DEMO (smoke-demo-degen.testnet): the token's code changed while someone held a master key. One person could have rewritten the rules."}
